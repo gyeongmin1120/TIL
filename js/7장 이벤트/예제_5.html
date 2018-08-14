@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <style>
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    // var count=0;
+    // var $info=null;
+    // var $cild=null;
+    // $(document).ready(function(){
+    //   $info=$("#info");
+    //   $child=$("#child");
+    //
+    //   $("#parent").mouseover(function(e){
+    //     count++;
+    //     $info.html($info.html()+"<br>"+count+","+e.target.id+".over");
+    //     $child.animate({
+    //       top:-100
+    //     },300);
+    //   });
+    //   $("#parent").mouseout(function(e){
+    //     count++;
+    //     $info.html($info.html()+"<br>"+count+","+e.target.id+".out");
+    //     $child.animate({
+    //       top:0
+    //     },300);
+    //   });
+    // });
+
+    // var count=0;
+    // var $info=null;
+    //
+    // $(document).ready(function(){
+    //   $info=$("#info");
+    //
+    //   $("#parent").mouseenter(function(e){
+    //     count++;
+    //     $info.html($info.html()+"<br>"+count+","+e.target.id+".over");
+    //
+    //   });
+    //   $("#parent").mouseleave(function(e){
+    //     count++;
+    //     $info.html($info.html()+"<br>"+count+","+e.target.id+".out");
+    //
+    //   });
+    // });
+
+    var count=0;
+    var $info=null;
+    var $cild=null;
+    $(document).ready(function(){
+      $info=$("#info");
+      $child=$("#child");
+
+      $("#parent").mouseenter(function(e){
+        count++;
+        $info.html($info.html()+"<br>"+count+","+e.target.id+".over");
+        $child.animate({
+          top:-100
+        },300);
+      });
+      $("#parent").mouseleave(function(e){
+        count++;
+        $info.html($info.html()+"<br>"+count+","+e.target.id+".out");
+        $child.animate({
+          top:0
+        },300);
+      });
+    });
+    </script>
+
+</head>
+
+<body>
+  <!-- <div id="info">
+    여기에 이벤트 정보가 출력될 거예요.
+  </div>
+  <div id="parent">
+    parent
+    <div id="child">
+      <div>
+        out
+      </div>
+      <div class="over">
+        over
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div id="info">
+    여기에 이벤트 정보가 출력될 거예요.
+  </div>
+  <div id="parent">
+    parent
+    <div id="child">
+      child
+    </div>
+  </div> -->
+
+  <div id="info">
+    여기에 이벤트 정보가 출력될 거예요.
+  </div>
+  <div id="parent">
+    parent
+    <div id="child">
+      <div>
+        out
+      </div>
+      <div class="over">
+        over
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

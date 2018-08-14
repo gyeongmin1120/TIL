@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+  $(document).ready(function(){
+    $("#start").click(function(){
+
+      var value=parseInt(Math.random()*10)+1;
+
+switch (value) {
+  case 3:
+    alert("냉장고");
+    break;
+  case 5:
+    alert("당첨! 세탁기");
+    break;
+  case 8:
+    alert("당첨! TV");
+    break;
+  default:
+    alert("꽝!");
+  }
+})
+})
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

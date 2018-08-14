@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+body{
+  font-size: 9pt;
+}
+.d-checkbox{
+  position: relative;
+  left:100px;
+  top:100px;
+}
+.d-checkbox .checkbox{
+  width:20px;
+  height: 15px;
+  float:left;
+  background: url("./resources/checkbox_uncheck.png") no-repeat;
+
+}
+.d-checkbox .checkbox.check{
+  background: url("./resources/checkbox_check.png") no-repeat;
+}
+</style>
+
+
+    <script>
+    $(document).ready(function(){
+          var bCheck=false;
+    var $chk =$(".d-checkbox .checkbox");
+    $(".d-checkbox").click(function(){
+          bCheck= !bCheck;
+
+          if(bcheck==true){
+            $chk.addClass("check");
+          }
+          else{
+            $chk.removeClass("check");
+          }
+        })
+      })
+
+    </script>
+  </head>
+  <body>
+<div class="d-checkbox">
+  <div class="checkbpx"></div>
+  <div class="label">
+    체크박스-여기를 클릭해 보세요.
+  </div>
+</div>
+  </body>
+</html>

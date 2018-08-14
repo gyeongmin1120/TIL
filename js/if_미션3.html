@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <script>
+
+  $(document).ready(function(){
+        var $fish=$("#fish");
+
+    $("#btnStart").click(function(){
+        var x=parseInt("#txtX").val());
+        var y=parseInt("#txtY").val());
+
+        if((x>=0 && x<=500) && (y>=0 && y<=300)){
+          $fish.css({
+            left:x,
+            top:y
+          });
+        } else{
+          alert("입력된 값이 너무 큽니다. 다시 입력해 주세요.");
+        }
+      });
+    })
+
+
+    </script>
+</head>
+<body>
+<!-- <div id="panel">
+    <div id="bar"></div>
+    <img src="fish.png" id="fish">
+</div>
+
+<div id="nav">
+<button id="btnStart">물고기 움직이기</button>
+</div>
+ -->
+
+
+</body>
+</html>

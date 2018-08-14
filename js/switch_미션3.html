@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <script>
+
+  $(document).ready(function(){
+        var $fish=$("#fish");
+var x=50;
+var y=200;
+
+    $("#btnStart").keydown(function(e){
+      console.log("입력한 키 코드 값 = "+e.keyCode);
+
+      switch (e.keyCode) {
+        case 37:
+          x-=50;
+          break;
+        case 39:
+          x+=50;
+          break;
+        case 38:
+          y-=50;
+          break;
+        case 40:
+          y+=50;
+          break;
+        }
+if(x<0)
+  X=0;
+if(x>500-120)
+  x=500-120;
+if(y<0)
+  y=0;
+if(y>500-70)
+  y=500-70;
+console.log("물고기 위치값 ",x,y);
+
+$fish.css({
+  left:x,
+  top:y
+});
+});
+    })
+
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
