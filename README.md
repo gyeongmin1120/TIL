@@ -55,10 +55,10 @@
 - [css(2)](./CSS/html_css_2.html)
 - [css selector(1)](./CSS/html_css_selectors_id.html)
 - [css selector(2)](./CSS/html_css_selectors_pc.html)
-- [box-model](./CSS/box-modeandposition.md)
-- [position](./CSS/box-modeandposition.md)
-- [스타일 상속](./CSS/style-inheritance\and\pseudo-class.md)
-- [가상클래스](./CSS/style-inheritance\and\pseudo-class.md)
+- [box-model](./CSS/box-modelandposition.md)
+- [position](./CSS/box-modelandposition.md)
+- [스타일 상속](./CSS/style-inheritanceandpseudo-class.md)
+- [가상클래스](./CSS/style-inheritanceandpseudo-class.md)
 
 
 
