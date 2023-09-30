@@ -1,6 +1,6 @@
-# TIL
+# Web 기본 학습(HTML, CSS)
 
-> Today I learned
+> TIL(Today I learned)
 
 오늘 학습한 내용을 정리하여 모아두는 프로젝트다.
 
